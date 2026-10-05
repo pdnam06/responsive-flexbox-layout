@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục responsive với Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <p class="eyebrow">KHÔNG GIAN HỌC TẬP &amp; SÁNG TẠO</p>
+            <h1>Góc lập trình</h1>
+            <p>Kiến thức nhỏ mỗi ngày, nền tảng vững cho ngày mai.</p>
+        </header>
+        <nav class="nav" aria-label="Điều hướng chính">
+            <a href="#home">Trang chủ</a>
+            <a href="#articles">Bài viết</a>
+            <a href="#roadmap">Lộ trình</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+        <div class="main-container">
+            <main class="content" id="home">
+                <section class="intro">
+                    <p class="eyebrow">BẮT ĐẦU HÀNH TRÌNH FRONTEND</p>
+                    <h2>Học cách xây dựng một trang web linh hoạt.</h2>
+                    <p>Từ HTML cơ bản đến CSS Flexbox, mỗi bài thực hành giúp bạn hiểu cách tổ chức nội dung và tạo giao diện phù hợp với nhiều thiết bị.</p>
+                    <a class="button" href="#articles">Khám phá bài viết ↓</a>
+                </section>
+                <section id="articles" class="articles">
+                    <h2>Bài viết nổi bật</h2>
+                    <div class="cards">
+                        <article class="card"><span>01 · HTML</span><h3>Xây dựng cấu trúc</h3><p>Chia trang thành Header, Navigation, Main Content, Sidebar và Footer.</p></article>
+                        <article class="card"><span>02 · FLEXBOX</span><h3>Sắp xếp linh hoạt</h3><p>Dùng flex-direction, flex-grow và flex-wrap để kiểm soát bố cục.</p></article>
+                        <article class="card"><span>03 · RESPONSIVE</span><h3>Thích ứng màn hình</h3><p>Dùng Media Query để đưa sidebar xuống dưới nội dung trên điện thoại.</p></article>
+                    </div>
+                </section>
+                <section id="roadmap" class="roadmap"><h2>Lộ trình thực hành</h2><ol><li>Viết cấu trúc HTML có ý nghĩa.</li><li>Thiết lập bố cục desktop bằng Flexbox.</li><li>Điều chỉnh bố cục cho mobile.</li><li>Kiểm tra và chia sẻ mã nguồn lên GitHub.</li></ol></section>
+            </main>
+            <aside class="sidebar" aria-label="Thông tin bổ sung">
+                <section><p class="eyebrow">BẢNG TIN</p><h2>Tin học tập</h2><ul><li>Thực hành bố cục Flexbox hai cột.</li><li>Kiểm tra hiển thị trên điện thoại.</li><li>Hoàn thiện bài tập và lưu mã nguồn.</li></ul></section>
+                <section class="tip"><h2>Mẹo Flexbox</h2><p>Đặt <code>min-width: 0</code> cho Flex Item để nội dung có thể co lại trong cột.</p></section>
+                <section><h2>Mục tiêu tuần</h2><p>Hoàn thành một trang responsive với HTML và CSS.</p></section>
+            </aside>
+        </div>
+        <footer class="footer" id="contact"><p>© 2026 Góc lập trình</p><p>Bài thực hành CSS Flexbox · HTML &amp; CSS</p></footer>
+    </div>
+</body>
+</html>
